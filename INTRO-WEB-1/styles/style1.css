@@ -1,0 +1,17 @@
+h1 {
+    color: tomato;
+    font-size: 70px;
+    font-family: sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+p {
+    font-family: sans-serif;
+    color: darkgray;
+}
+button {
+    background-color: orangered;
+    color: white;
+    border: 0;
+    padding: 20px;
+}
