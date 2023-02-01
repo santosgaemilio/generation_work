@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/tablas_anclas.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y anclas</title>
+</head>
+<body>
+    <h1 style="color:crimson; text-align: center;">TABLAS</h1>
+    <!--Las tablas son un conjunto estructurado de datos comuestos por filas y
+    columnas-->
+
+    <caption>Tabla de nombres</caption> <!--Represetna un título descriptivo en una tabla-->
+    <br>
+    <br>
+    <table> <!--crea el elemento de tabla-->
+        <tr> <!--representa una fila-->
+            <th>Nombre</th> <!--respresenta las celdas de encabezado-->
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>Pedro</td> <!--representa las celdas de datos-->
+            <td>Infante</td>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>García</td>
+        </tr>
+        <tr>
+            <td>Emilio</td>
+            <td>Santos</td>
+        </tr>
+    </table>
+    <br>
+
+
+    <table>
+        <p>Tabla simple con encabezado</p><!--Representa un parrafo de descrpcion-->
+        <thead><!--esta etiqueta agrupa los elementos de la cabecera en la tabla.-->
+            <tr>
+                <th colspan="2">Encabezado de tablas</th><!--permite expandir las celdas de datos
+                     o de encabezados al número de columnas que deseemos que ocupe-->
+                     <!--rowspan: el atributo rowspan permite expandir las celdas al número de 
+                        filas que queremos que ocupe. Siguiendo el ejemplo anterior, si quieres 
+                        que una celda de datos ocupe cuatro filas, lo escribirás así: 
+                        <td rowspan=»2″>-->
+            </tr>
+        </thead>
+        <tbody><!--esta etiqueta agrupa los elementos de contenido en la tabla.-->
+            <tr>
+                <td>El cuerpo de la tabla</td>
+                <td>con 2 columnas</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>Tabla con thead, tfoot, y tbody</p>
+    <table>
+        <thead>
+            <tr>
+            <th>Header content 1</th>
+            <th>Header content 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Body content 1</td>
+            <td>Body content 2</td>
+            </tr>
+        </tbody>
+        <tfoot><!--esta etiqueta agrupa los elementos de pie en la tabla.-->
+            <tr>
+            <td>Footer content 1</td>
+            <td>Footer content 2</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+
+    <p>Table with colgroup</p>
+    <table>
+        <colgroup span="4" style="background-color: gray;"></colgroup> <!--Para aplicar una propiedad a más de una columna no 
+            es necesario repetir la propiedad en cada elemento <col>. Lo más sencillo es 
+            aplicarle el atributo span al primer elemento <col>. Este atributo funciona 
+            igual que rowspan y colspan, es decir, nos permite expandir la influencia de <col>
+             al número de columnas que queramos.-->
+        <tr>
+            <th>Countries</th>
+            <th>Capitals</th>
+            <th>Population</th>
+            <th>Language</th>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>Washington, D.C.</td>
+            <td>309 million</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>Sweden</td>
+            <td>Stockholm</td>
+            <td>9 million</td>
+            <td>Swedish</td>
+        </tr>
+    </table>
+    <br>
+    <!--   <col style = background-color: black» span = «2»> --> <!--Esta linea quedo en el código, pero no se usa-->
+    <p>Table with colgroup and col</p>
+    <table>
+        <colgroup><!--El elemento <col> se especifica dentro de un bloque <colgroup>, justo debajo de la apertura <table>.-->
+            <col style="background-color: #0f0" /> <!--Este elemento nos permite especificar propiedades de estilo para toda una columna. 
+            Sin este elemento tendríamos que especificar el estilo en cada celda <th> o <td> de la columna que queramos estilizar. -->
+            <col style="background-color: rgb(255, 255, 59);"/>
+            <col style="background-color: rgb(221, 144, 0);">
+        </colgroup>
+        <tr>
+            <th>Lima</th>
+            <th>Limon</th>
+            <th>Naranja</th>
+        </tr>
+        <tr>
+            <td>Green</td>
+            <td>Yellow</td>
+            <td>Orange</td>
+        </tr>
+    </table>
+
+    <p>Cuadro sencillo con leyenda(caption)</p>
+    <table>
+        <caption>
+         Subtítulo impresionante
+        </caption>
+        <tr>
+            <td>Dato Impresionante</td>
+        </tr>
+    </table>
+<br>
+<b><p id="tt">Lista de Super</p></b>
+
+<table>
+    <colgroup>
+        <col style="background-color: rgb(225, 180, 235);">
+        <col style="background-color: rgb(136, 236, 136);">
+        <col style="background-color: rgb(105, 208, 248);">
+        <col style="background-color: rgb(247, 72, 72);">
+        <col style="background-color: rgb(242, 252, 114);">
+        
+    </colgroup>
+    <tr style="background-color: rgb(252, 163, 90);">
+        <th>Frutas</th>
+        <th>Verduras</th>
+        <th>Lacteos</th>
+        <th>Carnes</th>
+        <th>Mascotas</th>
+    </tr>
+    <tr>
+        <td>Manzanas</td>
+        <td>Apio</td>
+        <td>Crema</td>
+        <td>Res</td>
+        <td>Croquetas Perro</td>
+    </tr>
+    <tr>
+        <td>Platano</td>
+        <td>Cebolla</td>
+        <td>Queso</td>
+        <td>Pollo</td>
+        <td>Carnaza</td>
+    </tr>
+    <tr>
+        <td>Uvas</td>
+        <td>Jitomates</td>
+        <td>Leche</td>
+        <td>Cerdo</td>
+        <td>Sobre Pedrigree</td>
+    </tr>
+    <tr>
+        <td>Sandía</td>
+        <td>Jitomates</td>
+        <td>Queso Crema</td>
+        <td>Chorizo</td>
+        <td>Galletas de premio</td>
+    </tr>
+    <tr>
+        <td>Naranja</td>
+        <td>Brocoli</td>
+        <td>Jocoque</td>
+        <td>Machaca</td>
+        <td>Hueso</td>
+    </tr>
+    <footer>
+        <tr>
+            <td colspan="5" style="text-align: right; background-color: black; color: white;">
+                Total: $2000 | No. Artículos: 25
+            </td>
+        </tr>
+    </footer>
+</table>
+</body>
+</html>
