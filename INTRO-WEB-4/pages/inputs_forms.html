@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/input_forms.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs/Forms</title>
+</head>
+<body>
+    
+    <!--representa una sección de un documento que contiene controles interactivos que permiten a un usuario 
+    enviar información a un servidor web.-->
+    <form action=""></form>
+  <!--action:indica la ubicación del programa que procesará la información enviada por el navegador, cuando 
+    el formulario sea despachado.  -->
+    <form method=""></form>
+    <!--indica cómo debe el navegador adjuntar los datos del formulario a la petición.-->
+        <br>
+        <br>
+
+        <input type="button" onclick="alert('¡Hola programador!')" value="¡Haz click!"> 
+    <!--Un botón pulsador sin ningún comportamiento predeterminado mostrando el valor del atributo valor,
+        vacío de forma predeterminada.-->
+        <br>
+        <br>
+
+        <input type="checkbox" name="hambre" value="hambre"> Hambre?
+    </form><!--Una casilla de verificación que permite seleccionar/deseleccionar valores individuales.-->
+    <br>
+    <br>
+
+  <form>
+    Tu cumpleaños:
+    <input type="date" name="birthday"><!--Un control para introducir una fecha (año, mes y día, sin tiempo). Abre una selección de fecha  el año, mes, día, cuando está activa en los navegadores compatibles.-->
+  </form>
+  
+  <br>
+  <form>
+        Fecha antes del 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31"><br>
+        Fecha después del 2000-01-01:
+        <input type="date" name="bday" min="2000-01-02"><br>
+  </form><!--Se puede añadir los atributos min y max para restringir la selección.-->
+  <br>
+
+  <form>
+    Correo electrónico:
+    <input type="email" name="email">
+  </form><!--Un campo para editar una dirección de correo electrónico. Parece una entrada de texto, 
+    pero tiene parámetros de validación y teclado relevante para admitir navegadores y dispositivos con teclados
+     dinámicos.-->
+  <br>
+    <form>
+        <input type="image" id="image" alt="Login"
+        src="../assets/img/Pukara-Spinifex.jpg"> 
+    </form><!--Un botón gráfico de envío. Muestra una imagen definida 
+            por el atributo src. El atributo alt se muestra si falta la imagen src.-->
+    <br>
+    <form>
+        Mes y año:
+        <input type="month" name="monthYear">
+    </form><!--Un control para introducir un mes y un año, sin zona horaria.-->
+    <br>
+
+    <form>
+        Cantidad (entre 1 y 5):
+        <input type="number" name="quantity" min="1" max="5">
+    </form><!--Un control para introducir un número. Muestra una ruleta y agrega validación predeterminada cuando
+         es compatible. Muestra un teclado numérico en algunos dispositivos con teclados dinámicos.-->
+    <br>
+
+   <form>
+        <input type="radio" name="gender" value="male" checked> Hombre<br>
+        <input type="radio" name="gender" value="female"> Mujer<br>
+        <input type="radio" name="gender" value="other"> Otro
+    </form><!--Un botón de opción, que permite seleccionar un único valor entre varias opciones con el mismo
+         valor de nombre.-->
+
+    <br>
+    <form action="/action_page.php">
+        Nombre:<br>
+        <input type="text" name="firstname"><br>
+        Apellidos:<br>
+        <input type="text" name="lastname"><br><br>
+        <input type="submit" value="Enviar">
+    </form><!--Un botón que envía el formulario.-->
+    <br>
+
+    <form>
+        Teléfono:
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form> <!--Un control para introducir un número de teléfono. Muestra un teclado telefónico en algunos dispositivos con teclados dinámicos.-->
+    <br>
+
+    <form>
+        Nombre:<br>
+        <input type="text" name="firstname"><br>
+        Apellidos:<br>
+        <input type="text" name="lastname">
+    </form> <!--El valor predeterminado Un campo de texto de una sola línea. Los saltos de línea se eliminan automáticamente del valor de entrada.-->
+    <br>
+    <form>
+        ¿Cuando te registraste? (fecha y hora):
+        <input type="datetime-local" name="daytime">
+    </form><!--Un control para introducir un valor de tiempo sin zona horaria-->
+    <br>
+
+
+    <form>
+        Añade tu página web:
+        <input type="url" name="homepage">
+    </form><!--Un campo para introducir una dirección URL. Parece una entrada de texto, pero tiene parámetros de validación y teclado relevante para admitir navegadores y dispositivos con teclados dinámicos.-->
+    <br>  
+    
+    <form>
+        <input type="range" name="points" min="0" max="10">
+       
+    </form><!--Proporciona un slider para seleccionar un valor numérico entre dos valores (por defecto de 0 a 100)-->
+    <br>
+     
+    <form action="/action_page.php">
+        Nombre:<br>
+        <input type="text" name="firstname"><br>
+        Apellidos:<br>
+        <input type="text" name="lastname"><br><br>
+        <input type="reset">
+    </form><!--Define un botón para resetear todos los valores del formulario a los valores por defecto-->
+    
+      <br><!---->
+    <br><!---->
+
+    
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+         <li>
+           <label for="name">Nombre:</label> <!--un elemento utilizado para proveer una etiqueta a los controles del formulario.-->
+           <input type="text" id="name" name="user_name" />
+         </li>
+         <li>
+           <label for="mail">Correo electrónico:</label>
+           <input type="email" id="mail" name="user_email" />
+         </li>
+         <li>
+           <label for="msg">Mensaje:</label>
+           <textarea id="msg" name="user_message"></textarea> <!--un control usado para ingresar un trozo de texto que consta de una o más líneas.-->
+         </li>
+        </ul>
+    </form>
+    
+
+
+<!-------------------------------------------------------------------------------------------------------------->
+    <style>
+        form {
+        /* Centrar el formulario en la página */
+        margin: 0 auto;
+        width: 400px;
+        /* Esquema del formulario */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        }
+        
+        ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+        
+        form li + li {
+        margin-top: 1em;
+        }
+        
+        label {
+        /* Tamaño y alineación uniforme */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+        }
+        
+        input,
+        textarea {
+        /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+            Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+        font: 1em sans-serif;
+        
+        /* Tamaño uniforme del campo de texto */
+        width: 300px;
+        box-sizing: border-box;
+        
+        /* Hacer coincidir los bordes del campo del formulario */
+        border: 1px solid #999;
+        }
+        
+        input:focus,
+        textarea:focus {
+        /* Destacado adicional para elementos que tienen el cursor */
+        border-color: #000;
+        }
+        
+        textarea {
+        /* Alinear los campos de texto multilínea con sus etiquetas */
+        vertical-align: top;
+        
+        /* Proporcionar espacio para escribir texto */
+        height: 5em;
+        }
+        
+        .button {
+        /* Alinear los botones con los campos de texto */
+        padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+        }
+        
+        button {
+        /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+            entre las etiquetas y sus campos de texto */
+        margin-left: .5em;
+        }
+    
+    </style>
+
+</body>
+</html>

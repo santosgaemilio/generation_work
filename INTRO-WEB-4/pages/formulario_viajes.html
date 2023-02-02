@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de viajes</title>
+</head>
+<body>
+    <header style="background-color: rgb(205, 167, 255);">
+        <h1 style="text-align: center;">Formulario de viajes</h1> 
+        <img src="/assets/img/vecteezy_airplane_1208479.png" alt="" style="width: 50px;" id="avi">
+    </header>
+    <hr>
+
+    <form style="margin: 0 auto; width: 150px;">
+        Confirme su edad
+        <input type="date" name="birhtday">
+    </form>
+<br>
+    <form action="">
+        Viaja con niños? 
+        <input type="checkbox" name="niños" value="niños"> 
+    </form>
+<br>
+    <form action = "" style="font-size: 16px;">
+        Nombre:<br>
+        <input type="text" name="firstname" required><br>
+        <input type="text" name="firstname" required> <br>        
+        Apellidos:<br>
+        <input type="text" name="lastname" required><br>
+        
+   
+    </form>
+    <form action="">
+        Correo electrónico: <br>
+        <input type="email" name = "email" required>
+    </form>
+    <br>
+
+    <form>
+        Género: <br>
+        <input type="radio" name="gender" value="male" checked> Hombre<br>
+        <input type="radio" name="gender" value="female"> Mujer<br>
+        <input type="radio" name="gender" value="other"> Otro
+    </form>
+
+    <br>
+
+    <form>
+        Salida: <br>
+        <select name="destino" id="destino">
+            <option value="cln">Culiacán</option>
+            <option value="mty">Monterrey</option>
+            <option value="cdmx">Ciudad de México</option>
+            <option value="gdl">Guadalajara</option>
+        </select>
+        
+    </form>
+    <br>
+    <form>
+        Destino: <br>
+        <select name="destino" id="destino">
+            <option value="cln">Culiacán</option>
+            <option value="mty">Monterrey</option>
+            <option value="cdmx">Ciudad de México</option>
+            <option value="gdl">Guadalajara</option>
+        </select>
+        
+    </form>
+<br>
+
+    <form>
+        Ida:
+        <br>
+        <input type="date" name="bday" min="2023-02-02"><br>
+        <input type="time" name="salida" id="salida"> <br> <br>
+        Vuelta: <br>
+        <input type="date" name="bday" min="2023-02-03"><br>
+        <input type="time" name="salida" id="salida">
+    </form>
+<br>
+    <form>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+<!------------------------------------------------------------------------------------------------------------>
+<style>
+        form {
+        /* Centrar el formulario en la página */
+        margin: 0 auto;
+        width: 150px;
+        
+        }
+        #avi{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+</style>
+
+</body>
+</html>

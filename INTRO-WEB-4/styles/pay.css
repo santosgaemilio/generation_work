@@ -1,0 +1,21 @@
+table,
+td {
+    border: 1px solid #333;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(253, 204, 143);
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tarta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
