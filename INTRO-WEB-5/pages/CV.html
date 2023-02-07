@@ -20,9 +20,10 @@
                     <!--En el CSS se pone #pfp img y se abren corchetes, esto es por el parentezco y la herencia, se pone primero
                     el id del div y después el nombre del tag dentro del div especificado-->
                     <img src="/imgs/traje2.png" alt="Emilio Santos">
+                    <h1>HOLA MI NOMBRE ES <span>EMILIO SANTOS</span> Y ESTE ES MI CV</h1>
                 </div>
             </div>
-            <h1>HOLA MI NOMBRE ES <span>EMILIO SANTOS</span> Y ESTE ES MI CV</h1>
+            
             <nav class="menu">
                 <ul>
 
@@ -65,11 +66,141 @@
             </nav>
 
         </header>
+        <!-- FIN DEL HEADER -->
+        <!-- INICIO DE LA SECCIÓN PRICIPAL -->
 
-        <section>
+        <section class="row clearfix">
+            <!-- -----------------------------------------------60%---------------------------------------------------------------- -->
+            <!-- yo estoy poniendo todo lo de la izq en el div de la iz, Vic hace un div por sección para hacerlo más granular, si me
+            falla o falta algo lo cambio -->
+            <div class="pull-left col-60">
+                <!-- ********************************************Primer cuadro******************************************************** -->
+            
+                    <article>
+                        <h2>Acerca de</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odio ex beatae ipsam minus
+                             molestias cupiditate reprehenderit deserunt iste dolorum nostrum veritatis, sint itaque optio animi 
+                             voluptatum nulla dolores modi.</p>
+                    </article>
+                
+                <!-- *********************************************Segundo cuadro***************************************************** -->
+                
+                    <article class="education">
+                        <h2>Educación</h2>
+                        <div>
+                            <ul>
+                                <li>
+                                    <div class="flex">
+                                        <div class="year">2012</div>
+                                        <!-- el año se puso solo en un div para modificarlo bien -->
+                                        <div class="description">
+                                            <h3>I was born in León Guanajuato</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia incidunt ex laudantium 
+                                                doloribus hic, fugiat voluptatibus nesciunt iusto, quidem sit porro distinctio ab, impedit
+                                                 atque recusandae? Necessitatibus, maxime. Suscipit, quasi!</p>
+                                        </div>
+                                    </di >
+                                </li>
+                                <li>
+                                    <div class="flex">
+                                        <div class="year">1996</div>
+                                        <!-- el año se puso solo en un div para modificarlo bien -->
+                                        <div class="description">
+                                            <h3>I was born in León Guanajuato</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia incidunt ex laudantium 
+                                                doloribus hic, fugiat voluptatibus nesciunt iusto, quidem sit porro distinctio ab, impedit
+                                                 atque recusandae? Necessitatibus, maxime. Suscipit, quasi!</p>
+                                        </div>
+                                    </di >
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+               
+                <!-- ****************************************************Tercer cuadro************************************************ -->
+                    <article class="experiencia">
+                        <h2>Experiencia</h2>
+                        <div class="flex">
+                            <div class="cuadro-izq col-10">
+                                <div class="where">Google</div>
+                                <div>2015-2017</div>
+                            </div>
+                            <div class="cuadro-dere col-90">
+                                <h3>Javascript</h3>
+                                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laudantium, est illo quam eos culpa ea quaerat, quidem 
+                                    iusto minus unde pariatur eius odio quod et similique! Esse, consequatur aliquam?</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="cuadro-izq col-10">
+                                <div class="where">Oracle</div>
+                                <div>2011-2014</div>
+                            </div>
+                            <div class="cuadro-dere col-90">
+                                <h3>Python</h3>
+                                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laudantium, est illo quam eos culpa ea quaerat, quidem 
+                                    iusto minus unde pariatur eius odio quod et similique! Esse, consequatur aliquam?</p>
+                            </div>
+                        </di >
+                    </article>
+            
+            </div>
+            <!-- -----------------------------------------------------/60%------------------------------------------------------------ -->
+           
+            <!-- <article>
+                <h2>Educación</h2>
+                <div>
+                    <ul>
+                        <li>
+                            <h3>I was born in León Guanajuato</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia incidunt ex laudantium 
+                                doloribus hic, fugiat voluptatibus nesciunt iusto, quidem sit porro distinctio ab, impedit
+                                 atque recusandae? Necessitatibus, maxime. Suscipit, quasi!</p>
+                        </li>
+                    </ul>
+                </div>
+            </article> -->
 
+            <div class="pull-right col-40">
+
+                <article class="contacto">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li><span>Email:</span> santosgaemilio@gmail.com</li>
+                        <li><span>Skype:</span> emiliosantos</li>
+                        <li><span>Twitter:</span> @emiliosantos</li>
+                        <li><span>Facebook:</span> Santos Emilio</li>
+                    </ul>
+                </article>
+
+                <article class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li id = "java">java</li>
+                        <li id="html">html</li>
+                        <li id="css">css</li>
+                        <li id="python">python</li>
+                    </ul>
+                </article>
+                <!-- SKILLS ESTILO VIC-------------------------------------------------------------------------------------- -->
+                <article class="cointainerskill">
+
+                    <h2>skills</h2>
+                    
+                    <ul>
+                        <li class="html">html</li>
+                        <li class="css">css</li>
+                        <li class="js">js</li>
+                        <li class="php">python</li>
+                    </ul>
+
+                </article>
+                <!-- ------------------------------------------------------------------------------------------------------ -->
+            </div>
         </section>
-
+        <br>
+        <br>
         <footer>
 
         </footer>

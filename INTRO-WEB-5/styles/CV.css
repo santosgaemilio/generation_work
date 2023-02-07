@@ -1,23 +1,51 @@
+/*INICIO DE HEADER*/
 body{
     font-family: 'Open sans', Arial, Tahoma;
     font-weight: 400;
     font-size: 14px;
-    color: #363636;
-    background: #ededed;
+    color: #000000;
+    background: #000000;
 }
 
 h1{
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 5px;
 }
+/* color: rgb(245, 62, 96); */
 h1 span{
-    color: rgb(245, 62, 96);
+
+    background-image: linear-gradient(
+        -225deg,
+        #f77190 0%,
+        #56876d 29%,
+        #5a7684 67%,
+        #000000 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip{
+    to{
+        background-position: 200% center;
+    }
 }
 
 #pfp img{
-    background-color: #ffffff;
-    border-radius: 20%;
+    background-color: #f8f4e3;
+    border-radius: 20%;  
+   
+    /* border-radius hace como un trim a las esquinas de las imagenes, con 50% ya es un círculo */
     width: 120px;
+    /* es el ancho */
 
 }
 
@@ -25,36 +53,295 @@ h1 span{
     text-align: center;
     border-bottom-color: rgb(247, 113, 144);
     border-bottom-width: 5px;
-    border-bottom-style: double;
+    border-bottom-style: dotted;
+    
+
+    /* todas estas opciones de border-bottom son estilos para el borde inferior de la caja del primer div con la id pfp-head */
 }
 
 .container{
     max-width: 800px;
-    background-color: #faeae1;
+    /* dentro del div grande con la clase container se puede poner el limite de su ancho, por eso esta corto en el centro */
+    background-color:#f7ece1;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 60px;
+    border-radius: 5%;
+    /* todas las opciones de margin son para encasillar el div o container dentro de la página total mientras mantiene su width */
 
 }
 
 .menu ul{
+    /* estas opciones son para la lista mayor: item1, item2, item3 */
     text-align: center;
+    /* como son textos puedes con está opción mandarlos al centro, se ponen en el centro de */
     margin: auto;
+    /* automatiza el margen lateral para automaticamente centrar el elemento en el contenedor*/
     padding: 0%;
+    margin-top: 5px;
+    /* mueve el padding del contenedor, es como el espacio entre el contenido y los bordes */
     list-style-type: none;
+    /* báscimante modifica los puntitos de las listas, pero también se pueden quitar por completo con none*/
 }
 
 .menu ul li{
     display: inline-block;
+    /* el display te dice si es inline o block */
     position: relative;
+    /* el position te dice como un elemento se va a posicionar en un documento, el relative dice que te da la posición relativa
+    del documento. Realmente esta parte no la entendi, creo que su posisión se pone con el left, right, etc*/
 
 }
 
 .menu ul li a{
-    background-color: #363636;
-    color: white;
+    font-weight: 700;
+    background-color: #000000;
+    color: #f77190;
     text-decoration: none;
     display: block;
     padding: 3px;
 }
+
+/*The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine
+ the final location of positioned elements.*/
+
+
+.menu ul li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    list-style-type: none;
+    display: none;
+    height: auto;
+}
+    
+.menu ul li:hover ul{
+    /* el hover es la opción que te da para que cuando hagas hover sobre un elemento pase algo
+    puede se que cambie de color o que aparezca la lista com ya está */
+    display: block;
+    
+}
+
+.menu ul li ul li{
+    display: block;
+    width: 80px;
+    height: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+/*FIN DE HEADER*/
+
+/* INICIO DEL SECTION PRINCIPAL */
+
+h2 {
+    color: rgb(245, 62, 96);
+    text-transform: uppercase;
+    
+}
+
+h2::before{
+    /* QUE NO SE TE OLVIDE QUE LOS DOS PUNTOS VAN JUNTOS AL TAG, SI NO NO SIRVE */
+    /* el before pone algo atrás lo que señala, es un subelemento. Supongo que ha de tener muchas porpiedades */
+    content: "// ";
+    /* aqui se eligio ponerle unos slashes como contenido atrás del h2*/
+}
+
+.clearfix{
+    display: table;
+    line-height: 1;
+    content: "";
+}
+
+.pull-left{
+    float: left;
+    
+}
+
+
+
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.col-60{
+    width: 60%;
+    
+    
+} 
+
+
+/* Lo de education */
+
+.flex{
+    display: flex;
+}
+
+.education ul{
+    list-style: none;
+    margin:0;
+    padding: 0; 
+}
+.education ul li{
+    display: inline-block;
+    position: relative;
+}
+.education .year {
+    width: 200px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+    
+.education .description {
+    
+    background: #ffff;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    margin-right: 10px;
+    position: relative;
+    box-sizing: border-box; 
+    color: #f77190;
+    text-align: justify;
+}
+
+.education .description h3, .education .description p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.education .description p::after {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-right: 8px solid #ffff ;
+    top: 5px;
+    left: -16px;
+}
+
+/* DE AQUI PARA ADELANTE LO HIZE DIFERENTE A VIC PERO AUN ASÍ EL RESULTADO ES EL MISMO */
+/* experiencia ------------------------------------------------------------------ */
+.cuadro-izq{
+    float: left;
+    width: 200px;
+    font-size: 0.8em;   
+    padding: 10px; 
+    color: gray;
+       
+}
+
+.cuadro-izq .where{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+.col-10{
+    width: 25%;
+}
+
+.cuadro-dere{
+    
+    float: right;
+    margin-top: -15px;
+    
+    
+}
+.col-90{
+    width: 75%;
+}
+
+.experiencia h3{
+   
+    margin-bottom: 0;
+}
+
+/* -------------------- Esta es la parte del 40% --------------------------------------*/
+
+.pull-right{
+    float: right;
+    
+}
+
+.col-40{
+    width: 40%;
+    
+} 
+/* --------------------------------------------------------------------------------------- */
+
+/* contacto */
+
+.contacto ul li span{
+    font-weight: bold;
+}
+
+/* skills */
+
+.skills ul, .skills ul li{
+    text-transform: uppercase;
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding: 0;
+    font-weight: bold;
+    
+}
+
+#java{
+    display: block;
+    background-color: #f77190;
+    color: white;
+    padding: 3px;
+    padding-left: 5px;
+    width: 90%;
+}
+#html{
+    display: block;
+    background-color: #f77190;
+    color: white;
+    padding: 3px;
+    padding-left: 5px;
+    width: 75%;
+}
+#css{
+    display: block;
+    background-color: #f77190;
+    color: white;
+    padding: 3px;
+    padding-left: 5px;
+    width: 50%;
+}
+#python{
+    display: block;
+    background-color: #f77190;
+    color: white;
+    padding: 3px;
+    padding-left: 5px;
+    width: 25%;
+}
+
+/* --------------skills 2.0 versión Vic -------------*/
+
+.cointainerskill, .cointainerskill ul{
+    width: 100%;
+    background-color: transparent;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills2 {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
