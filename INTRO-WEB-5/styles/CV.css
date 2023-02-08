@@ -88,7 +88,7 @@ h1 span{
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    border-radius: 5%;
+    border-radius: 1%;
     /* todas las opciones de margin son para encasillar el div o container dentro de la página total mientras mantiene su width */
 
 }
@@ -247,7 +247,7 @@ h2::before{
 /* experiencia ------------------------------------------------------------------ */
 .cuadro-izq{
     float: left;
-    width: 200px;
+    width: 150px;
     font-size: 0.8em;   
     padding: 10px; 
     color: gray;
@@ -267,6 +267,8 @@ h2::before{
     
     float: right;
     margin-top: -15px;
+    padding-right: 7px;
+    
     
     
 }
@@ -346,23 +348,122 @@ h2::before{
 }
 
 /* --------------skills 2.0 versión Vic -------------*/
+/* --------------versión 1------------------------- */
 
-.cointainerskill, .cointainerskill ul{
-    width: 100%;
-    background-color: transparent;
+/* .skills2 {
     list-style-type: none;
+    margin:0;
     padding: 0;
-    margin: 0;
+}
+    .skills-item {				
+        color: #FFFFFF;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 2px 0 2px 5px;
+        margin-top: 5px;				
+        background: #F0563D;
+        
+    }
+    .skills-item[data-percent="10"] { width: 10% }
+    .skills-item[data-percent="20"] { width: 20% }
+    .skills-item[data-percent="30"] { width: 30% }
+    .skills-item[data-percent="40"] { width: 40% }
+    .skills-item[data-percent="50"] { width: 50% }
+    .skills-item[data-percent="60"] { width: 60% }
+    .skills-item[data-percent="70"] { width: 70% }
+    .skills-item[data-percent="80"] { width: 80% }
+    .skills-item[data-percent="90"] { width: 90% }  */
+
+/* ----------------versión 2----------------------- */
+/* .html { 
+color: #DDDDDD;
+margin: 3px;
+list-style-type: none; 
+text-align: right; 
+width: 90%; 
+background-color: #04AA6D;}
+.css { color: #DDDDDD;
+margin: 3px;
+list-style-type: none; 
+text-align: right;
+width: 80%; 
+background-color: #2196F3;
+}
+.js { 
+color: #DDDDDD;
+margin: 3px;
+list-style-type:none; 
+text-align: right;
+none;width: 65%; 
+background-color: #f44336;
+}
+.python { 
+color: #DDDDDD;
+margin: 3px;
+list-style-type: none;
+text-align: right; 
+width: 60%; 
+background-color: #808080;
+} */
+
+/* idiomas */
+
+.idiomas p{
+    display: block;
+    border-bottom-color: rgb(172, 172, 172) ;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    padding-bottom: 2px;
+    
 }
 
-.skills2 {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.fa-star{
+    color: #f77190;
+}
+
+/* -----idiomas estilo Vic---------------------- */
+/* .icon-start{
+    background: url(/imgs/star-grey.png) no-repeat;
+    width: 110px;
+    height: 14px;
+    float: right;
+}
+.icon-start-red{
+    background: url(/imgs/star-red.png) no-repeat;
+    width: 110px;
+    height: 14px;
+    float: left;
+}
+.oji-start{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 5px;
+} */
+
+/* hobies */
+
+.hobbies span{
+    display:inline-block;
+    background-color: #f77190;
+    padding: 5px;
     color: white;
+    text-align: center;
+    width: 90px;
+    
+
 }
 
-.html {width: 90%; background-color: #04AA6D;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
+.end{
+    
+    
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: block;
+    padding-right: 20px;
+    padding-bottom: 0.5px;
+    text-align: right;
+    font-weight: bold;
+    font-size: small;
+    opacity: 50%;
+    
+}
