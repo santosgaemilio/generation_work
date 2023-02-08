@@ -40,7 +40,7 @@ h1 span{
 }
 
 #pfp img{
-    background-color: #f8f4e3;
+    background-color: transparent;
     border-radius: 20%;  
    
     /* border-radius hace como un trim a las esquinas de las imagenes, con 50% ya es un círculo */
@@ -58,6 +58,27 @@ h1 span{
 
     /* todas estas opciones de border-bottom son estilos para el borde inferior de la caja del primer div con la id pfp-head */
 }
+.pfp {
+    width: 120px;
+   
+    position: relative;
+    display: inline-block;
+    
+}
+.pfp .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.pfp:hover .img-top {
+    display: inline;
+}
+.pfp:hover .img-bot{
+    opacity: 0%;
+}
+
 
 .container{
     max-width: 800px;
