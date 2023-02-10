@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos JS</title>
+    <script>
+        function saludar(){
+            console.log("Hello world JS from VScode");
+        }
+        function sumar(v1, v2=10){
+            console.log("esto es una suma: ")
+            return (v1+v2);
+        }
+
+        // Victor hizo un script aparte pero creo que solo es estético
+        
+        function llamaNombre(nombre){
+            alert("Hola, "+ nombre)
+        }
+    </script>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <script>
+
+
+       saludar();
+       console.log("El resultado es: ", sumar(3))
+    //    El prompt se pudo poner dentro de la función como un parámetro pero ps lo hizo diferente
+       let nombre = prompt("Cual es tu nombre: ")
+       llamaNombre(nombre)
+
+
+    </script>
+</body>
+</html>
