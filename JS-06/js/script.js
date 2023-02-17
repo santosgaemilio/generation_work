@@ -96,3 +96,96 @@ let botonMult = document.getElementById("mult_btn")
 let botonDiv = document.getElementById("div_btn")
 
 let resultado = document.getElementById("resultado")
+
+/*
+Manipulación del DOM
+
+    - Métodods para acceder elementos
+        - document.getElementById
+        - etc.
+    - Métodos para crear elementos
+        - document.createElement (etiqueta)
+        - document.createTextNode(texto)
+    - Métodos para insertar elementos
+        - parentElement.append
+        - parentElement.insertBefore
+        - parentElement.insertAdjacentElement
+    - Métodos para modificar elementos
+        - node.outerHTML (leer o referenciar el elemento)
+        - node.innerHTML (modificar el elemento)
+*/
+
+// No sé sinsea así, se ven muchas líneas
+let textoAModificar = document.querySelector("#main_title")
+function cambiarColor(){
+    textoAModificar.style.color = "blue";
+}function cambiarColor2(){
+    textoAModificar.style.color = "black";
+}
+botonSuma.addEventListener("mouseover", cambiarColor)
+botonSuma.addEventListener("mouseout", cambiarColor2)
+// Funciones para la calculadora
+
+
+function suma() {
+    let n1 = parseInt(input1.value)
+    let n2 = parseInt(input2.value)
+    let suma = n1 + n2
+    resultado.innerHTML = suma + " "+ botonSuma.value
+}
+botonSuma.addEventListener("click", suma)
+
+
+function resta() {
+    let n1 = parseInt(input1.value)
+    let n2 = parseInt(input2.value)
+    let resta = n1 - n2
+    resultado.innerHTML = resta
+}
+botonResta.addEventListener("click", resta)
+function mult() {
+    let n1 = parseInt(input1.value)
+    let n2 = parseInt(input2.value)
+    let mult = n1 * n2
+    resultado.innerHTML = mult
+}
+botonMult.addEventListener("click", mult)
+function div() {
+    let n1 = parseInt(input1.value)
+    let n2 = parseInt(input2.value)
+    let div = n1 / n2
+    resultado.innerHTML = div
+}
+botonDiv.addEventListener("click", div)
+
+// Segundo intento
+document.querySelectorAll('.boton').forEach(click => {
+    let id = click.getAttribute('id');
+    let n1 = parseInt(input1.value)
+    let n2 = parseInt(input2.value)
+    click.addEventListener('click', () => {
+        suma = n1 + n2
+        resta = n1 - n2
+        mult = n1 * n2
+        div = n1 / n2
+      console.log('A button with ID ' + id + ' was clicked!') 
+    } );
+  });
+
+// let result = ()=>{
+//     suma = n1 + n2
+//     resta = n1 - n2
+//     mult = n1 * n2
+//     div = n1 / n2
+
+//     bots.map((bot)=>{if(bot.value != null || bots.value != undefined){return }})
+// }
+
+
+
+
+/*
+Cómo se crea un evento (addEventListener)
+    - node.addEventListener("evento a escuchar")
+
+*/
