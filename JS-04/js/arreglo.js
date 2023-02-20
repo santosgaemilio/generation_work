@@ -50,12 +50,20 @@ let lista3 = [12,5,80,34,7]
 lista3.sort()
 console.log(lista3);
 
-lista3.sort(
+let lista4 = [23,345,67,123,6781234,564,34,567]
+lista4.sort(
     function(v1,v2){
         return v1 - v2
     }
 )
-console.log(lista3);
+console.log(lista4);
+
+let nuevanuevaLista = lista4.map(
+    function(valor){
+        return valor * 2
+    }
+)
+console.log(nuevanuevaLista);
 
 // 40 100 1 5 25 10
 // 1 100 40 5 25 10
