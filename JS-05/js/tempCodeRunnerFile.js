@@ -1,3 +1,6 @@
+let text = "Hola Mundo"
+// "Hola Mundo"
+
 function points(texto){
     let newTexto = texto.split(" ").map(
         (word)=>{

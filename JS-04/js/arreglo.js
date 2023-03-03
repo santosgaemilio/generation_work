@@ -5,7 +5,7 @@ for(let i=0;i<lista.length;i++){
     console.log(lista[i])
 }
 
-let nuevaLista = lista.slice(1,4)
+let nuevaLista = lista.slice(1,3)
 console.log(nuevaLista);
 
 let otraLista = lista.join("-")
@@ -47,7 +47,7 @@ console.log(stn);
 
 
 let lista3 = [12,5,80,34,7]
-lista3.sort()
+lista3.sort((a,b)=>a-b)
 console.log(lista3);
 
 let lista4 = [23,345,67,123,6781234,564,34,567]
