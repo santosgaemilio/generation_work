@@ -1,0 +1,109 @@
+Ejercicio 1. If/Else
+
+import java.util.*;
+
+
+public class Solution {
+
+
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int N = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        
+        if(N%2 != 0){
+           System.out.println("Weird"); 
+        }else if(N%2 == 0 && N>=2 && N<=5){
+            System.out.println("Not Weird");
+        }else if(N%2 == 0 && N>=6 && N<=20){
+            System.out.println("Weird"); 
+        }else if(N%2 == 0 && N>20){
+            System.out.println("Not Weird");
+        }
+        scanner.close();
+    }
+}
+
+Ejercicio 2. Loops 2
+
+import java.util.*;
+
+class Solution{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            
+            int a = in.nextInt(); // 5
+            int b = in.nextInt(); // 3
+            double n = (double)in.nextInt(); // 5
+            int link = a + b; // 8
+            System.out.print(link); // 8
+            System.out.print(" ");
+            
+            for(int j = 1;j<=(n-1);j++){ //n-1 = 4
+                int pow = (int) Math.pow(2,j); // 2
+                link = link + pow*b; // 14
+                System.out.print(link); // 14
+                System.out.print(" ");
+                
+            }
+            System.out.println("");
+            
+        }
+        in.close();
+    }
+}
+
+
+Ejercicio 3. Plus Minus
+
+import java.io.*;
+import java.text.*;
+import java.util.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    
+
+    public static void plusMinus(List<Integer> arr) {
+            DecimalFormat df = new DecimalFormat("#.######");
+            double pos = 0;
+            double neg = 0;
+            double zero = 0;
+            for(double element: arr){
+                if(element == 0){
+                   zero++; 
+                }else if(element<0){
+                    neg++;
+                }else{
+                    pos++;
+                }
+            }
+            System.out.println(df.format(pos/arr.size()));
+            System.out.println(df.format(neg/arr.size()));
+            System.out.println(df.format(zero/arr.size()));
+    }
+
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int n = Integer.parseInt(bufferedReader.readLine().trim());
+
+        List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+            .map(Integer::parseInt)
+            .collect(toList());
+
+        Result.plusMinus(arr);
+
+        bufferedReader.close();
+    }
+}
+
