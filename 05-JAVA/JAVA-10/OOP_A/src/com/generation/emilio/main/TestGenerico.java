@@ -12,5 +12,7 @@ public class TestGenerico {
 		intObj.claseTipo();
 		stringObj.claseTipo();
 	}
+	
+	
 
 }
