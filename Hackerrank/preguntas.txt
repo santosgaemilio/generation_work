@@ -1,0 +1,17 @@
+Teoría
+- Que es OOP?
+- Diferencia entre un leguaje interpretado y uno compilado
+- Cuales modificadores de acceso tiene Java y que hacen? 
+- Diferencia entre protegido y privado? 
+- Qué es herencia?
+- Qué es el polimorfismo? 
+- Diferencia entre una inferfaz y una clase abstracta 
+- Qué es override y overload en OOP
+- Qué es la notación "Big Oh" 
+- Qué complejidad tiene buscar un elemento en un stack (peor caso)
+- Qué complejidad tiene un merge sort? 
+
+LIVE CODING
+- Haz un programa que identifique si una frase es un palídromo
+- Que complejidad es el codigo que usaste
+- Hazlo con un solo ciclo for. Qué complejidad tiene. 
