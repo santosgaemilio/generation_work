@@ -60,6 +60,7 @@ public class MinutosFin {
 		time.add(minutes);
 		
 		return time;
+		// [dias,hora,minuto]
 		
 		
 	}
